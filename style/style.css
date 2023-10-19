@@ -1,0 +1,50 @@
+:root {
+    --negro: rgb(22, 22, 22);
+    --blanco: rgb(247, 247, 247);
+    --naranja: rgb(255, 92, 51);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-completo{
+    background-color: var(--negro);
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.navbar{
+    margin: 40px;
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    font-size: 20px;
+}
+
+.list a{
+    text-decoration: none;
+    font-weight: 800;
+    color: var(--blanco);
+}
+
+.list  a:hover {
+    color: var(--naranja);
+}
+
+body {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
