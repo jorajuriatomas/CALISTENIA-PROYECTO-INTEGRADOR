@@ -1,0 +1,30 @@
+:root {
+    --negro: rgb(22, 22, 22);
+    --blanco: rgb(247, 247, 247);
+    --naranja: rgb(255, 92, 51);
+    --gris: #808080;
+    --fondo: #f2f2f2;
+  }
+
+@media screen and (max-width: 1024px) {
+  .navbar ul {
+    background-color: var(--negro) ;
+    width: 100%;
+    height: calc(40vh - 103px);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+  
+  .navbar label {
+    display: block;
+  }
+
+  #toggle-menu:checked ~ .list {
+    display: flex;
+  }
+}

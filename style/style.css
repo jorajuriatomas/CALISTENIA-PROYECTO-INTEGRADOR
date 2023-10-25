@@ -16,16 +16,23 @@
   background-color: var(--negro);
   display: flex;
   justify-content: space-between;
-  padding: 0px 25px;
+  padding: 0px 5%;
+  align-items: center;
+  width: 100%;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-}
 
 .navbar {
+  display: flex;
   margin: 40px;
+}
+
+.navbar label{
+  display: none;
+}
+
+#toggle-menu {
+  display: none;
 }
 
 .list {
