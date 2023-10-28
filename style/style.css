@@ -75,23 +75,33 @@ body {
 }
 
 .first-part-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
-  width: 50%;
+
   margin-top: 30px;
 }
 
 .first-part-text h1 {
   font-size: 72px;
   font-weight: 600;
+  width: 680px;
+  text-align: center;
 }
 
 .first-part-text h5 {
   font-size: 30px;
-  margin-top: 25px;
+  margin: 25px 20% 0;
 }
 
 .container-position {
   margin: 50px 0;
+  width: 1140px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .container-items {
@@ -99,16 +109,17 @@ body {
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 25px;
+  width: 1140px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
   height: 100%;
   justify-content: flex-start;
-  max-width: 300px;
+ 
   background-color: var(--blanco);
   color: var(--negro);
 }
@@ -163,6 +174,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 1140px;
 }
 
 .division-sedes h2 {
@@ -172,7 +184,7 @@ body {
 
 .sedes-position {
   margin-top: 64px;
-  width: 80%;
+  width: 1140px;
 }
 
 .sedes {
@@ -197,14 +209,18 @@ body {
   text-align: center;
   background: var(--naranja);
   width: 100%;
-  height: 80px;
+  min-height: 80px;
   font-size: 25px;
 }
 
 .sede img {
   width: 100%;
-  height: 65%;
-  object-fit: cover;
+  object-fit: contain;
+  align-items: flex-start;
+}
+
+.proximamente {
+  padding: 60.7675px 0;
 }
 
 .sede ul {
