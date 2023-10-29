@@ -1,51 +1,57 @@
 :root {
-    --negro: rgb(22, 22, 22);
-    --blanco: rgb(247, 247, 247);
-    --naranja: rgb(255, 92, 51);
-    --gris: #808080;
-    --fondo: #f2f2f2;
+  --negro: rgb(22, 22, 22);
+  --blanco: rgb(247, 247, 247);
+  --naranja: rgb(255, 92, 51);
+  --gris: #808080;
+  --fondo: #ebe1d8;
+}
+@media screen and (max-width: 1200px) {
+  .container-position {
+    width: 940px;
   }
-  @media screen and (max-width: 1200px) {
-    .container-position {
-      width: 940px;
-    }
-    .container-items{
-      width: 940px;
-      width: 100%;
-    }
-   
-    .sedes-position {
-      width: 940px;
-    }
-    
-    .inspiration{
-      width: 940px;
-    }
-
-    .core {
-      width: 966px;
-      margin-top: 40px;
-    }
-
-    .core-image-1-3, .core-image-2-4 {
-      width: 241.5px;
-    }
+  .container-items {
+    width: 940px;
+    width: 100%;
   }
+
+  .sedes-position {
+    width: 940px;
+  }
+
+  .inspiration {
+    width: 940px;
+  }
+
+  .core {
+    width: 966px;
+    margin-top: 40px;
+  }
+
+  .core-image-1-3,
+  .core-image-2-4 {
+    width: 241.5px;
+  }
+
+  .contact {
+    width: 940px;
+  }
+}
 
 @media screen and (max-width: 992px) {
   .navbar ul {
-    background-color: var(--negro) ;
+    background-color: var(--negro);
     width: 100%;
-    height: calc(40vh - 103px);
+    height: 70vh;
     position: absolute;
-    top: 80px;
+    top: 75px;
     left: 0;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     display: none;
+    z-index: 999;
   }
-  
+
   .navbar label {
     display: block;
   }
@@ -67,13 +73,12 @@
     width: 720px;
   }
 
-  .sedes{
+  .sedes {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .inspiration{
+  .inspiration {
     width: 720px;
-    height: 1100px;
   }
 
   .inspiration {
@@ -87,8 +92,13 @@
     height: 100%;
   }
 
-  .core-image-1-3, .core-image-2-4 {
+  .core-image-1-3,
+  .core-image-2-4 {
     width: 373px;
+  }
+
+  .contact {
+    width: 720px;
   }
 }
 
@@ -105,14 +115,14 @@
     width: 540px;
   }
 
-  .sedes{
+  .sedes {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .inspiration{
+  .inspiration {
     width: 540px;
   }
-  
+
   .stories {
     width: 260px;
   }
@@ -131,7 +141,8 @@
     height: 100%;
   }
 
-  .core-image-1-3, .core-image-2-4 {
+  .core-image-1-3,
+  .core-image-2-4 {
     width: 540px;
     height: 750px;
   }
@@ -140,7 +151,7 @@
     height: 720px;
   }
 
-  .image img{
+  .image img {
     width: 540px;
     height: 714px;
   }
@@ -150,6 +161,24 @@
     width: 100%;
     padding: 0;
   }
+
+  .contact {
+    width: 540px;
+  }
+
+  .login {
+    width: 450px;
+    margin: 138px auto;
+  }
+
+  .login-container {
+    width: 100%;
+  }
+
+  .login-text {
+    width: 300px;
+  }
+
 }
 
 @media screen and (max-width: 575px) {
@@ -170,20 +199,20 @@
     width: 320px;
   }
 
-  .division-sedes h2{
+  .division-sedes h2 {
     font-size: 40px;
   }
 
-  .inspiration-text h2{
+  .inspiration-text h2 {
     font-size: 55px;
   }
 
-  .inspiration-text p{
+  .inspiration-text p {
     font-size: 20px;
     padding: 0 5%;
   }
 
-  .inspiration{
+  .inspiration {
     grid-template-columns: repeat(1, 1fr);
     width: 340px;
     height: 100%;
@@ -197,13 +226,14 @@
     height: 258px;
     width: 300px;
   }
- 
+
   .core {
     width: 340px;
     height: 100%;
   }
 
-  .core-image-1-3, .core-image-2-4 {
+  .core-image-1-3,
+  .core-image-2-4 {
     width: 340px;
     height: 470px;
   }
@@ -212,9 +242,59 @@
     height: 450px;
   }
 
-  .image img{
+  .image img {
     width: 340px;
     height: 450px;
   }
 
+  .contact {
+    width: 340px;
+  }
+
+  .contact-image {
+    display: none;
+  }
+
+  .contact-info {
+    width: 100%;
+  }
+  
+  .login {
+    width: 350px;
+    margin: 138px auto;
+  }
+
+  .login-container {
+    width: 100%;
+  }
+
+  .login-text {
+    width: 250px;
+  }
+
+  .login-dates label {
+    font-size: 10px;
+    padding: 5px 0;
+  }
+  
+  .login-dates input {
+    padding: 10px 10px;
+    height: 20px;
+  }
+
+  .login-buttom {
+    height: 20px;
+  }
+
+  .login-buttom input {
+    height: 20px;
+    width: 100px;
+    font-size: 10px;
+  }
+
+  .login-register {
+    gap: 15px;
+    margin: 10px;
+    font-size: 10px;
+  }
 }
