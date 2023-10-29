@@ -3,6 +3,7 @@
   --blanco: rgb(247, 247, 247);
   --naranja: rgb(255, 92, 51);
   --gris: #808080;
+  --grisclaro:#c0c0c0;
   --fondo: #f2f2f2;
 }
 
@@ -94,6 +95,7 @@ body {
 .first-part-text h5 {
   font-size: 30px;
   margin: 25px 20% 0;
+  color: var(--grisclaro);
 }
 
 .container-position {
@@ -255,7 +257,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 75%;
 }
 
 .inspiration-text-tittle {
@@ -270,6 +271,7 @@ body {
 .inspiration-text-tittle p{
     padding: 0 100px;
     text-align: center;
+    color: var(--grisclaro);
 }
 
 .inspiration-text h2 {
@@ -298,6 +300,8 @@ body {
   align-items: center;
   justify-content: center;
   margin: 70px 0 140px;
+  width: 1140px;
+  height: 520px;
 }
 
 .stories {
@@ -308,13 +312,11 @@ body {
   background-color: var(--blanco);
   padding: 20px;
   box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
-  height: 650px;
-
+  height: 100%;
 }
 
 .stories img {
   display: flex;
-  width: 310px;
   height: 320px;
   object-fit: fill;
   margin-top: 20px;
@@ -335,7 +337,7 @@ body {
 
 .fourth-part {
     display: flex;
-    flex-direction: column;
+
     justify-content: center;
     align-items: center;
 }
@@ -480,7 +482,7 @@ body {
     margin: 10px 40px 0;
 }
 
-.core {
+.core-footer {
     display: flex;
     justify-content: center;
     height: 20%;
